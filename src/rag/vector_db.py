@@ -26,9 +26,6 @@ def database():
 def load_content(pdf_docs: Path):
     """ Função que lê um pdf e escreve o seu conteúdo em um arquivo Markdown"""
 
-    with open("pdfs-contents.md", "w") as f:
-        f.write("")
-
     fp : str = str(pdf_docs)
 
     loader = PdfInspectorLoader(
