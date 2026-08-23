@@ -25,7 +25,7 @@ def database():
         vectorize_chunks(chunks)
 
 def load_content(pdf_docs: Path):
-    """ Função que lê um pdf e escreve o seu conteúdo em um arquivo Markdown"""
+    """ Função que lê um pdf e retorna o seu conteúdo."""
 
     fp : str = str(pdf_docs)
 
