@@ -3,11 +3,12 @@ from os import getenv
 from langchain_pdf_inspector import PdfInspectorLoader 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma.vectorstores import Chroma
-from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
+from langchain_cohere.embeddings import CohereEmbeddings
 from dotenv import load_dotenv
 
-load_dotenv(Path.cwd() / ".env")
-EMBEDDING_MODEL = str(getenv("EMBEDDING_MODEL"))
+load_dotenv(override=True) # with override=True, even if you change .env values, the cached value that was used before won't get in your way when running your code, it will always fetch from the .env file.
+EMBEDDING_MODEL = getenv("EMBEDDING_MODEL")
+COHERE_API_KEY = str(getenv("COHERE_API_KEY"))
 PATH_FOLDER = Path.cwd() / "sample-content"
 PDF_SEPARATOR = """
 
@@ -48,11 +49,12 @@ def chunking(docs):
 def vectorize_chunks(chunks):
     db = Chroma.from_documents(
         chunks,
-        GoogleGenerativeAIEmbeddings(
+        CohereEmbeddings(
             model=EMBEDDING_MODEL
-        ),
+        ), # pyright: ignore
         persist_directory="ChromaDB"
     )
-    print("Banco de dados criado!")
 
-database()
+if __name__ == "__main__":
+    database()
+    print("Banco de dados criado!")
