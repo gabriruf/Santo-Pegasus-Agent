@@ -25,25 +25,26 @@ def database():
         vectorize_chunks(chunks)
 
 def load_content(pdf_docs: Path):
-    """ Função que lê um pdf e escreve o seu conteúdo em um arquivo Markdown"""
+    """ Função que lê um pdf e retorna o seu conteúdo."""
 
-    fp : str = str(pdf_docs)
+    fp = str(pdf_docs)
 
     loader = PdfInspectorLoader(
         file_path=fp
     )
 
+    print(f"Leitura concluída para o arquivo: {pdf_docs.name}")
     return loader.load()
 
 def chunking(docs):
     docs_separator = RecursiveCharacterTextSplitter(
-        chunk_size=2000,
-        chunk_overlap=500,
+        chunk_size=1500,
+        chunk_overlap=350,
         length_function=len,
         add_start_index=True
     )
     chunks = docs_separator.split_documents(docs)
-    print(len(chunks))
+    print(f"Quantidade de chunks: {len(chunks)}")
     return chunks
 
 def vectorize_chunks(chunks):
