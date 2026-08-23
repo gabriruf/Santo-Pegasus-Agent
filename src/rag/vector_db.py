@@ -38,8 +38,8 @@ def load_content(pdf_docs: Path):
 
 def chunking(docs):
     docs_separator = RecursiveCharacterTextSplitter(
-        chunk_size=2000,
-        chunk_overlap=500,
+        chunk_size=1500,
+        chunk_overlap=350,
         length_function=len,
         add_start_index=True
     )
