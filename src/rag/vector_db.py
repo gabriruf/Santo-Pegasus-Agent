@@ -27,7 +27,7 @@ def database():
 def load_content(pdf_docs: Path):
     """ Função que lê um pdf e retorna o seu conteúdo."""
 
-    fp : str = str(pdf_docs)
+    fp = str(pdf_docs)
 
     loader = PdfInspectorLoader(
         file_path=fp
