@@ -33,6 +33,7 @@ def load_content(pdf_docs: Path):
         file_path=fp
     )
 
+    print(f"Leitura concluída para o arquivo: {pdf_docs.name}")
     return loader.load()
 
 def chunking(docs):
@@ -43,7 +44,7 @@ def chunking(docs):
         add_start_index=True
     )
     chunks = docs_separator.split_documents(docs)
-    print(len(chunks))
+    print(f"Quantidade de chunks: {len(chunks)}")
     return chunks
 
 def vectorize_chunks(chunks):
