@@ -1,5 +1,14 @@
 # Santo Pegasus Agent
 
+## Tabela de conteúdos:
+[Descrição geral](https://github.com/gabriruf/Santo-Pegasus-Agent#descri%C3%A7%C3%A3o-geral)
+[Arquitetura da solução](https://github.com/gabriruf/Santo-Pegasus-Agent#arquitetura-da-solu%C3%A7%C3%A3o)
+[Técnologias e ferramentas utilizadas](https://github.com/gabriruf/Santo-Pegasus-Agent#tecnologias-e-ferramentas-utilizadas)
+[Instruções para executar o projeto](https://github.com/gabriruf/Santo-Pegasus-Agent#instru%C3%A7%C3%B5es-para-executar-o-projeto)
+[Exemplos de perguntas que o agente NÃO consegue responder](https://github.com/gabriruf/Santo-Pegasus-Agent#exemplos-de-perguntas-que-o-agente-n%C3%A3o-consegue-responder)
+[Exemplos de respostas geradas pelo agente](https://github.com/gabriruf/Santo-Pegasus-Agent#exemplos-de-respostas-geradas-pelo-agente)
+[TODO do projeto](https://github.com/gabriruf/Santo-Pegasus-Agent#todo-do-projeto)
+
 ## Descrição geral
 
 O **Santo Pegasus Agent** é um assistente de inteligência artificial desenvolvido para a empresa ficticia "Santo Pegasus Soluciones". O projeto utiliza documentos internos em formato PDF como fonte de conhecimento para que o agente possa responder perguntas relacionadas às informações presentes nesses documentos.
