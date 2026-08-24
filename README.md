@@ -104,6 +104,8 @@ Os trechos dos documentos mais relevantes para a pergunta são recuperados e env
 
 - **python-dotenv**: Biblioteca Python utilizada para carregar variáveis de ambiente a partir de um arquivo `.env`, permitindo manter informações sensíveis, como chaves de API, fora do código-fonte.
 
+- **streamlit**: Framework Python usado para criar aplicações web interativas de maneira simples e rápida.
+
 ---
 
 ## Instruções para executar o projeto
