@@ -151,29 +151,38 @@ python ./src/rag/vector_db.py
 ```bash
 streamlit run main.py
 ```
-
+ 
 > *Dessa forma, o servidor irá abrir na porta*: <http://localhost:8501>
-
+ 
 ---
 
 ## Exemplos de perguntas que o agente NÃO consegue responder
 
 1. 
-Usuário: Quem ganhou a copa do mundo FIFA de 1958?
-> Resposta: Não tenho informações suficientes para responder a essa pergunta.
+    > *Usuário: Quem ganhou a copa do mundo FIFA de 1958?*
+    >
+    > Resposta: Não tenho informações suficientes para responder a essa pergunta.
 
 2.
-Usuário: Quem é o atual presidente dos Estados Unidos da América?
-> Resposta: Não tenho acesso a informações atualizadas em tempo real, então não sei responder com precisão quem é o atual presidente dos Estados Unidos da América. Para obter essa informação, recomendo consultar fontes confiáveis de notícias ou sites governamentais.
+    > *Usuário: Quem é o atual presidente dos Estados Unidos da América?*
+    >
+    > Resposta: Não tenho acesso a informações atualizadas em tempo real, então não sei responder com precisão quem é o atual presidente dos Estados Unidos da América. Para obter essa informação, recomendo consultar fontes confiáveis de notícias ou sites governamentais.
 
 ---
 
 ## Exemplos de respostas geradas pelo agente
-1. 
+*1. 🗣️ : "Qual é a função do back-end da Santo Pegasus Soluciones?"*
 ![Exemplo 1](images/exemplo1.png)
 
-2. 
+*2. 🗣️ : "Olá, eu sou John, estou no meu primeiro dia como colaborador da Santo Pegasus, de forma resumida, o que devo fazer?"*
 ![Exemplo 2](images/exemplo2.png)
 
-3. 
+*3. 🗣️ : "Do que se trata a cultura blameless e a psicologia do erro sistêmico?"*
 ![Exemplo 3](images/exemplo3.png)
+
+---
+
+## TODO do projeto
+- [ ] Colocar a aplicação dentro de um container (Docker);
+- [ ] Salvar conversas de forma persistente;
+- [ ] Melhorar a interface do usuário com mais recursos (painel lateral mostrando conversas anteriores, documentos carregados, etc)
