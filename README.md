@@ -1,27 +1,27 @@
 # Santo Pegasus Agent
 
 ## Tabela de conteúdos:
-[Descrição geral](https://github.com/gabriruf/Santo-Pegasus-Agent#descri%C3%A7%C3%A3o-geral)
+- [Descrição geral](https://github.com/gabriruf/Santo-Pegasus-Agent#descri%C3%A7%C3%A3o-geral)
 
-[Arquitetura da solução](https://github.com/gabriruf/Santo-Pegasus-Agent#arquitetura-da-solu%C3%A7%C3%A3o)
+- [Arquitetura da solução](https://github.com/gabriruf/Santo-Pegasus-Agent#arquitetura-da-solu%C3%A7%C3%A3o)
 
-- [Fluxo de ingestão](https://github.com/gabriruf/Santo-Pegasus-Agent#fluxo-de-ingest%C3%A3o)
+    - [Fluxo de ingestão](https://github.com/gabriruf/Santo-Pegasus-Agent#fluxo-de-ingest%C3%A3o)
 
-- [Fluxo de consulta](https://github.com/gabriruf/Santo-Pegasus-Agent#fluxo-de-consulta)
+    - [Fluxo de consulta](https://github.com/gabriruf/Santo-Pegasus-Agent#fluxo-de-consulta)
 
-[Técnologias e ferramentas utilizadas](https://github.com/gabriruf/Santo-Pegasus-Agent#tecnologias-e-ferramentas-utilizadas)
+- [Técnologias e ferramentas utilizadas](https://github.com/gabriruf/Santo-Pegasus-Agent#tecnologias-e-ferramentas-utilizadas)
 
-[Instruções para executar o projeto](https://github.com/gabriruf/Santo-Pegasus-Agent#instru%C3%A7%C3%B5es-para-executar-o-projeto)
+- [Instruções para executar o projeto](https://github.com/gabriruf/Santo-Pegasus-Agent#instru%C3%A7%C3%B5es-para-executar-o-projeto)
 
-- [Requisitos](https://github.com/gabriruf/Santo-Pegasus-Agent#requisitos)
+    - [Requisitos](https://github.com/gabriruf/Santo-Pegasus-Agent#requisitos)
+    
+    - [Instalação](https://github.com/gabriruf/Santo-Pegasus-Agent#instala%C3%A7%C3%A3o)
 
-- [Instalação](https://github.com/gabriruf/Santo-Pegasus-Agent#instala%C3%A7%C3%A3o)
+- [Exemplos de perguntas que o agente NÃO consegue responder](https://github.com/gabriruf/Santo-Pegasus-Agent#exemplos-de-perguntas-que-o-agente-n%C3%A3o-consegue-responder)
 
-[Exemplos de perguntas que o agente NÃO consegue responder](https://github.com/gabriruf/Santo-Pegasus-Agent#exemplos-de-perguntas-que-o-agente-n%C3%A3o-consegue-responder)
+- [Exemplos de respostas geradas pelo agente](https://github.com/gabriruf/Santo-Pegasus-Agent#exemplos-de-respostas-geradas-pelo-agente)
 
-[Exemplos de respostas geradas pelo agente](https://github.com/gabriruf/Santo-Pegasus-Agent#exemplos-de-respostas-geradas-pelo-agente)
-
-[TODO do projeto](https://github.com/gabriruf/Santo-Pegasus-Agent#todo-do-projeto)
+- [TODO do projeto](https://github.com/gabriruf/Santo-Pegasus-Agent#todo-do-projeto)
 
 ## Descrição geral
 
