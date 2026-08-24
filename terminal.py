@@ -4,7 +4,7 @@ if __name__ == "__main__":
     userprompt = input("> ")
     knowledge = asking_to_rag(userprompt)
 
-    asking_to_llm(
+    print(asking_to_llm(
         userprompt,
         knowledge
-    )
+    ))
