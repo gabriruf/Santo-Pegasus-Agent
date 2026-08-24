@@ -71,5 +71,5 @@ def asking_to_llm(user_prompt: str, rag_knowledge: str | None):
     llm_answer = ChatCohere(
         model=CHAT_MODEL
     ).invoke(prompt)
-    print(f"Resposta do Assistente:\n {llm_answer.content}")
-    print(f"Métricas de uso:\n {llm_answer.usage_metadata}")
+
+    return f"{llm_answer.content}"
