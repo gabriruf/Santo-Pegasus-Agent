@@ -119,28 +119,38 @@ Os trechos dos documentos mais relevantes para a pergunta são recuperados e env
 git clone https://github.com/gabriruf/Santo-Pegasus-Agent.git
 ```
 
-2. Criar um ambiente virtual Python:
-2.1. se estiver no Linux
+2. Criar o seu .env e alterar os valores padrão:
+```bash
+cp .env.example .env
+```
+
+```ini
+COHERE_API_KEY="your-cohere-api-key"
+EMBEDDING_MODEL="cohere-embedding-model" # e.g. embed-multilingual-v3.0
+CHAT_MODEL="cohere-chat-model" # e.g. command-r7b-12-2024COHERE_API_KEY=""
+```
+
+3. Criar um ambiente virtual Python:
 ```bash
 python -m venv .venv
 ```
 
-3. Instalar as bibliotecas Python:
+4. Instalar as bibliotecas Python:
 ```bash
 pip install -Uq python-dotenv langchain langchain-text-splitters langchain-cohere langchain-chroma pdf-inspector langchain-pdf-inspector streamlit
 ```
 
-4. Executar o arquivo `src/rag/vector_db` para gerar o banco de dados vetorial:
+5. Executar o arquivo `src/rag/vector_db` para gerar o banco de dados vetorial:
 ```bash
 python ./src/rag/vector_db.py
 ```
 
-5. Inicializar a instância local do Streamlit:
+6. Inicializar a instância local do Streamlit:
 ```bash
 streamlit run main.py
 ```
 
-Dessa forma, o servidor irá abrir na porta: http://localhost:8501
+> *Dessa forma, o servidor irá abrir na porta*: <http://localhost:8501>
 
 ---
 
